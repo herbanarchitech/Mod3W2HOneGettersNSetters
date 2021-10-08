@@ -22,14 +22,24 @@ public class CreateComputer {
 		Computer desktopOne = new Computer();
 		
 		System.out.println("Enter the brand name of your computer\n");
-		
 		String name = uInput.nextLine(); // this will be used as input to receive use input from the keyboard 
-		char 
+		
+		System.out.println("Enter the year this model was released");
+		String releaseDate = uInput.next();
+		
+		System.out.println(" Enter the cost of you computer ");
+		float price = uInput.nextFloat();
+	
+		
 		desktopOne.setName(name);
+		System.out.printf("Brand name entered the for the computer %s\n",desktopOne.getName()); // Will be using C inspired library to format the variables cleanly 
 		
+		desktopOne.setYear(releaseDate);
+		System.out.printf("Release date of the is machine was %s\n", desktopOne.getYear());
 		
-		
-		System.out.printf("Brand name entered the for the compute %s",desktopOne.getName()); // Will be using C inspired library to format the variables cleanly 
+		desktopOne.setCost(price);
+		System.out.printf("%.2f The cost of the computer is", desktopOne.getCost());
+
 		
 	}
 

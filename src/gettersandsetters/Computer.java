@@ -12,7 +12,7 @@ public class Computer {
 	
 	private String name;
 	
-	private char year;name = u
+	private String year;
 	
 	float cost;
 
@@ -24,11 +24,19 @@ public class Computer {
 		this.name = name;
 	}
 
-	public char getYear() {
+	public String getYear() {
 		return year;
 	}
 
-	public void setYear(char year) {
+	public void setYear(String year) {
 		this.year = year;
+	}
+
+	public float getCost() {
+		return cost;
+	}
+
+	public void setCost(float cost) {
+		this.cost = cost;
 	}
 }
